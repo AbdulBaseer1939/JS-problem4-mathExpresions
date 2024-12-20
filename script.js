@@ -1,30 +1,40 @@
-// Problem#1: Declare 3 variables in one statement. 
-var firstVariable = 20, secondVariable = 50, thirdVariable = 50;
-console.log("First Variable ", firstVariable, " \nSecond Variable ", secondVariable, " \nThird Variable ", thirdVariable );
+// problem: Write a program to take a number in a variable, do the required arithmetic to display the following result in your browser: 
+var a = 10;
+document.write ("Result:<br>The value of is:" + a + "</br>.............................<br>");
 
-// // Problem#2: Declare 5 legal & 5 illegal variable names.
-// // 5 Legal Variable Names:
-// myVariable = 10; //Starts with a letter, followed by letters and numbers.
-// _privateVar = "John Doe"; //Starts with an underscore, followed by letters and numbers.
-// myFirstVariable = 50;//Uses camelCase convention, common in many languages.
-// MY_CONSTANT = true;//Uses uppercase letters and underscores, often for constants.
-// counter123 = 100; //Starts with a letter, followed by letters and numbers.
+++a;
+document.write ("<br>The value of ++a is: " + a + "</br>Now the value of a is: 11<br>");
 
-// // 5 Illegal Variable Names:
-// 1stVariable= 10; //Starts with a number, which is not allowed.
-// my-variable= "John Doe";//Contains a hyphen, which is not allowed in most languages.
-// class = "John Doe"; //This is a reserved keyword in many languages.
-// my variable = 10;//Contains a space, which is not allowed.
-// %discount = 10;//Starts with a special character, which is generally not allowed.
+a++;
+document.write ("<br>The value of a++ is: " + a + "<br>Now the value of a is: 12<br>");
 
-// problem#3: Display this in your browser a)  A heading stating “Rules for naming JS variables”, b)  Variable names can only contain ______, ______, ______ and ______. For example $my_1stVariable, c) Variables must begin with a ______, ______ or _____. For example $name, _name or name, d) Variable names are case _________, e) Variable names should not be JS _________.
+--a;
+document.write ("<br>The value of --a is: " + a + "</br>Now the value of a is: 11<br>");
 
-document.write("<h1>Rules for naming JS variables</h1>");
-document.write("<p>Variable names can only contain <b>letters</b>, <b>numbers</b>, <b>underscores</b> and <b>dollar signs</b>. For example: $my_1stVariable</p>");
-document.write("<p>Variables must begin with a <b>letter</b>, <b>underscore( _ )</b> or <b>dollar sign ($)</b>. For example: $name, _name or name</p>");
-document.write("<p>Variable names are case <b>sensitive.</b></p>");
-document.write("<p>Variable names should not be JS <b>keywords.</b></p>");
+a--;
+document.write ("<br>The value of a-- is: " + a + "<br>Now the value of a is: 10");
 
+// problem:  What will be the output in variables a, b & result after execution of the following script: 
+// var a = 2, b = 1; 
+// var result = --a - --b + ++b + b--; 
+// Explain the output at each stage: 
+// 1) --a;
+// 2) --a - --b; 
+// 3) --a - --b + ++b;
+// 4) --a - --b + ++b + b--;
+
+var a = 2;
+var b = 1;
+var result = --a - --b + ++b + b--;
+
+console.log("a: " + a);
+console.log("b: " + b);
+console.log("result: " + result);
+
+// prblem:  Write a program that takes input a name from user & greet the user.
+var enterName = prompt("Enter your name");
+
+alert("Hello " + enterName);
 
 
 
