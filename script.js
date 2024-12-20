@@ -36,6 +36,24 @@ var enterName = prompt("Enter your name");
 
 alert("Hello " + enterName);
 
+// problem: Write a program to take input a number from user & display it’s multiplication table on your browser. If user does not enter a new number, multiplication table of 5 should be displayed by default.
+
+var inputNumber = prompt("Enter a number");
+
+if (inputNumber == "") {
+    inputNumber = 5;
+}
+
+var multiplicationTable = "";
+
+for (var i = 1; i <= 10; i++) {
+  multiplicationTable += inputNumber + " x " + i + " = " + (inputNumber * i) + "<br>";
+}
+
+document.write("Multiplication Table of " + inputNumber + ":<br>" + multiplicationTable);
+
+
+
 
 
 
